@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가구 판매 홍보</title>
+  <style>
+    /* 이전 스타일 유지 */
+
+    body {
+      margin: 0; /* 기본 마진 제거 */
+      padding: 0; /* 기본 패딩 제거 */
+    }
+
+    header {
+      position: relative;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      /* float: left; */
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>가구 판매 홍보 웹 사이트</h1>
+    <nav>
+      <div class="dropdown">
+        <a href="#home">홈</a>
+      </div>
+      <div class="dropdown">
+        <a href="#products">상품</a>
+        <div class="dropdown-content">
+          <a href="#living-room">거실 가구</a>
+          <a href="#bedroom">침실 가구</a>
+          <a href="#kitchen">주방 가구</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#events">이벤트</a>
+      </div>
+      <div class="dropdown">
+        <a href="#about">회사 소개</a>
+      </div>
+      <div class="dropdown">
+        <a href="#contact">고객 지원</a>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <img id="imagePlaceholder" src="./testImg1.jpg" alt="이미지 설명">
+  </section>
+
+  <section>
+    <!-- 이전 섹션 내용 유지 -->
+  </section>
+
+  <footer>
+    <!-- 이전 푸터 내용 유지 -->
+  </footer>
+
+  <script>
+    // 이미지 전환을 위한 JavaScript 코드
+    var imageIndex = 1;
+    var imagePaths = ["./testImg1.jpg", "./testImg2.jpg", "./testImg3.jpg"]; // 추가 이미지 경로
+
+    function changeImage() {
+      document.getElementById('imagePlaceholder').src = imagePaths[imageIndex];
+      imageIndex = (imageIndex + 1) % imagePaths.length;
+    }
+
+    // 이미지 전환 주기 (예: 3000 밀리초 = 3초)
+    setInterval(changeImage, 3000);
+  </script>
+</body>
+</html>
