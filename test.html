@@ -6,10 +6,11 @@
   <title>가구 판매 홍보</title>
   <style>
     /* 이전 스타일 유지 */
-
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
     body {
       margin: 0; /* 기본 마진 제거 */
       padding: 0; /* 기본 패딩 제거 */
+      font-family: "Noto Sans KR", sans-serif;
     }
 
     header {
@@ -23,22 +24,28 @@
     }
 
     nav {
-      background-color: #333;
       overflow: hidden;
     }
 
     nav a {
       /* float: left; */
       display: block;
-      color: #fff;
+      color: black;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
     }
-
+/*
     nav a:hover {
       background-color: #ddd;
       color: black;
+    }
+*/
+    .switching-banner{
+      position: fixed;
+      right:50%;
+      left: 50%;
+      transform: translate(0, -50%);
     }
 
     .dropdown {
@@ -49,14 +56,23 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #333;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      background-color: white;
+      box-shadow: 12px 12px 12px 12px rgba(0,0,0,0.2);
       z-index: 1;
     }
 
+    .category{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+/*  
     .dropdown:hover .dropdown-content {
       display: block;
     }
+*/
 
     section img {
       width: 100%;
@@ -67,35 +83,101 @@
 </head>
 <body>
   <header>
-    <h1>가구 판매 홍보 웹 사이트</h1>
+    <h1>사이트 이름</h1>
     <nav>
       <div class="dropdown">
-        <a href="#home">홈</a>
-      </div>
-      <div class="dropdown">
-        <a href="#products">상품</a>
+        <a href="#home">주문제작 샘플</a>
         <div class="dropdown-content">
-          <a href="#living-room">거실 가구</a>
-          <a href="#bedroom">침실 가구</a>
-          <a href="#kitchen">주방 가구</a>
+          <a href="#living-room">인조가죽 원단</a>
+          <a href="#bedroom">패브릭 원단</a>
+          <a href="#kitchen">벨벳 원단</a>
+          <a href="#kitchen">테이블 상판</a>
+          <a href="#kitchen">대리석</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="#events">이벤트</a>
+        <a href="#products">포트폴리오</a>
+        <div class="dropdown-content">
+          <a href="#living-room">드라마 방송납품</a>
+          <a href="#bedroom">프렌차이즈 체인점</a>
+          <a href="#kitchen">카페외 상업공간</a>
+          <a href="#kitchen">기업체 관공서</a>
+          <a href="#kitchen">병원가구</a>
+        </div>
       </div>
       <div class="dropdown">
-        <a href="#about">회사 소개</a>
+        <a href="#events">의자</a>
+        <div class="dropdown-content">
+          <a href="#living-room">목재 의자</a>
+          <a href="#bedroom">철제 의자</a>
+          <a href="#kitchen">미드 센추리</a>
+          <a href="#kitchen">회전의자</a>
+          <a href="#kitchen">아크릴/PC/사출의자</a>
+        </div>
       </div>
       <div class="dropdown">
-        <a href="#contact">고객 지원</a>
+        <a href="#about">쇼파</a>
+        <div class="dropdown-content">
+          <a href="#living-room">1인용 쇼파</a>
+          <a href="#bedroom">2-3인용 쇼파</a>
+          <a href="#kitchen">병원 | 대기실 공간 쇼파</a>
+          <a href="#kitchen">붙박이쇼파</a>
+          <a href="#kitchen">노래방룸쇼파</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#contact">오피스</a>
+      </div>
+      <div class="dropdown">
+        <a href="#events">테이블</a>
+        <div class="dropdown-content">
+          <a href="#living-room">우드슬랩 테이블</a>
+          <a href="#bedroom">천연&인조 대리석 테이블</a>
+          <a href="#kitchen">6인 이상 테이블</a>
+          <a href="#kitchen">목재 테이블</a>
+          <a href="#kitchen">유리/철제/ABS 테이블</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#events">야외용 가구</a>
+        <div class="dropdown-content">
+          <a href="#living-room">야외용 의자</a>
+          <a href="#bedroom">야외용 바의자</a>
+          <a href="#kitchen">야외용 쇼파</a>
+          <a href="#kitchen">야외용 테이블</a>
+          <a href="#kitchen">파라솔</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#events">제작가구 외</a>
+        <div class="dropdown-content">
+          <a href="#living-room">서비스테이블&음료휴지통</a>
+          <a href="#bedroom">인포메이션&카운터</a>
+          <a href="#kitchen">수납서랍장/북케이스</a>
+          <a href="#kitchen">캔틴장&탕비장</a>
+          <a href="#kitchen">홈리빙</a>
+        </div>
       </div>
     </nav>
   </header>
 
   <section>
-    <img id="imagePlaceholder" src="./testImg1.jpg" alt="이미지 설명">
+    <div class="switching-banner">
+      <img id="imagePlaceholder" src="./testImg1.jpg" alt="이미지 설명">
+    </div>
   </section>
-
+    <div class="category">
+      <h3>CATEGORY</h3>
+      <a href="#any">
+        <img src="./testImg1.jpg" alt="이미지 설명">
+      </a>
+      <a href="#any">
+        <img src="./testImg2.jpg" alt="이미지 설명">
+      </a>
+      <a href="#any">
+        <img src="./testImg3.jpg" alt="이미지 설명">
+      </a>
+    </div>
   <section>
     <!-- 이전 섹션 내용 유지 -->
   </section>
@@ -104,6 +186,7 @@
     <!-- 이전 푸터 내용 유지 -->
   </footer>
 
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script>
     // 이미지 전환을 위한 JavaScript 코드
     var imageIndex = 1;
@@ -116,6 +199,15 @@
 
     // 이미지 전환 주기 (예: 3000 밀리초 = 3초)
     setInterval(changeImage, 3000);
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".dropdown").hover(function () {
+        $(this).find(".dropdown-content").stop().slideToggle(500);
+      }, function () {
+        $(this).find(".dropdown-content").stop().slideToggle(100);
+      });
+    });
   </script>
 </body>
 </html>
