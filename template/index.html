@@ -1,60 +1,126 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
-  
-  <title>go-15</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <style type="text/css"></style>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <script type="text/javascript" src="../js/indexJs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사이트 이름</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <a href="#">
-        <p>LOGO</p>
-      </a>
-      <img src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-128.png" alt="">
-      <nav>
-        <div class="dropmenu">
-          <ul id="dm_ul">
-            <li><a href="#">브랜드 소개</a>
-              <ul>
-                <li><a href="#">인사말</a></li>
-                <li><a href="#">설립취지</a></li>
-                <li><a href="#">비전/미션</a></li>
-                <li><a href="#">목표</a></li>
-              </ul>
-            </li>
-            <li><a href="#">제품 안내</a>
-              <ul>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">음료</a></li>
-                <li><a href="#">디저트</a></li>
-                <li><a href="#">식기</a></li>
-              </ul>
-            </li>
-            <li><a href="#">매장 안내</a>
-              <ul>
-                <li><a href="#">위치</a></li>
-                <li><a href="#">스페셜 하우스</a></li>
-                <li><a href="#">시설안내</a></li>
-              </ul>
-            </li>
-            <li><a href="#">예약</a>
-              <ul>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">예약하기</a></li>
-                <li><a href="#">예약확인</a></li>
-              </ul>
-            </li>
-          </ul>
-      </nav>
-    </header>
+  <header>
+    <h1>사이트 이름</h1>
+    <nav>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=1">주문제작 샘플</a>
+        <div class="dropdown-content">
+          <a href="#living-room">인조가죽 원단</a>
+          <a href="#bedroom">패브릭 원단</a>
+          <a href="#kitchen">벨벳 원단</a>
+          <a href="#kitchen">테이블 상판</a>
+          <a href="#kitchen">대리석</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=2">포트폴리오</a>
+        <div class="dropdown-content">
+          <a href="#living-room">드라마 방송납품</a>
+          <a href="#bedroom">프렌차이즈 체인점</a>
+          <a href="#kitchen">카페외 상업공간</a>
+          <a href="#kitchen">기업체 관공서</a>
+          <a href="#kitchen">병원가구</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=3">의자</a>
+        <div class="dropdown-content">
+          <a href="#living-room">목재 의자</a>
+          <a href="#bedroom">철제 의자</a>
+          <a href="#kitchen">미드 센추리</a>
+          <a href="#kitchen">회전의자</a>
+          <a href="#kitchen">아크릴/PC/사출의자</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=4">쇼파</a>
+        <div class="dropdown-content">
+          <a href="#living-room">1인용 쇼파</a>
+          <a href="#bedroom">2-3인용 쇼파</a>
+          <a href="#kitchen">병원 | 대기실 공간 쇼파</a>
+          <a href="#kitchen">붙박이쇼파</a>
+          <a href="#kitchen">노래방룸쇼파</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#contact">오피스</a>
+      </div>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=5">테이블</a>
+        <div class="dropdown-content">
+          <a href="#living-room">우드슬랩 테이블</a>
+          <a href="#bedroom">천연&인조 대리석 테이블</a>
+          <a href="#kitchen">6인 이상 테이블</a>
+          <a href="#kitchen">목재 테이블</a>
+          <a href="#kitchen">유리/철제/ABS 테이블</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=6">야외용 가구</a>
+        <div class="dropdown-content">
+          <a href="#living-room">야외용 의자</a>
+          <a href="#bedroom">야외용 바의자</a>
+          <a href="#kitchen">야외용 쇼파</a>
+          <a href="#kitchen">야외용 테이블</a>
+          <a href="#kitchen">파라솔</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="../template/product/list.html?pid=7">제작가구 외</a>
+        <div class="dropdown-content">
+          <a href="#living-room">서비스테이블&음료휴지통</a>
+          <a href="#bedroom">인포메이션&카운터</a>
+          <a href="#kitchen">수납서랍장/북케이스</a>
+          <a href="#kitchen">캔틴장&탕비장</a>
+          <a href="#kitchen">홈리빙</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="slide slide_wrap">
+      <div class="slide_item item1">1</div>
+      <div class="slide_item item2">2</div>
+      <div class="slide_item item3">3</div>
+      <div class="slide_item item4">4</div>
+      <div class="slide_item item5">5</div>
+      <div class="slide_prev_button slide_button">◀</div>
+      <div class="slide_next_button slide_button">▶</div>
+      <ul class="slide_pagination"></ul>
+    </div>
+  </section>
+  <div class="category">
+    <h3 style="margin-bottom: 0px;">CATEGORY</h3>
+    <a href="#any">
+      <img src="../content/testimg4.jpg" alt="이미지 설명">
+    </a>
+    <a href="#any">
+      <img src="../content/testimg5.jpg" alt="이미지 설명">
+    </a>
+    <a href="#any">
+      <img src="../content/testimg6.jpg" alt="이미지 설명">
+    </a>
   </div>
+  <section>
+    <!-- 이전 섹션 내용 유지 -->
+  </section>
+
+  <footer>
+    <!-- 이전 푸터 내용 유지 -->
+  </footer>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="../js/indexJs.js"></script>
 </body>
 
 </html>
